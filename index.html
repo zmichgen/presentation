@@ -6,32 +6,18 @@
 
 		<title>Ajax & Promise</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
-
+		
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
 
-		<!-- Theme used for syntax highlighting of code -->
+		
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
 	</head>
 
 	<body>
@@ -51,103 +37,96 @@
 						<p>Client sends requests... Server answers...</p>
 					</section>
 					<section>
+						<h2>Traditional Web Application Model</h2>
+						<img src="./image/tdaditional_model.jpg" width="800px">						
+					</section>
+					<section>
 						<h2>Page is reloaded....</h2>
 						<img src='./image/please-wait-.jpg'>
+						<p>It was...</p>
+						<p><small>And now it happens...</small></p>
 					</section>
 				</section>				
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h2>AJAX</h2>
+						<p>AJAX is a developer's dream, because you can:</p>
+						<ul>
+							<li>Read data from a web server - after the page has loaded</li>
+							<li>Update a web page without reloading the page</li>
+							<li>Send data to a web server - in the background</li>
+						</ul>
+												
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<p>"Asynchronus Javascript and XML"</p>
+						<img src = './image/ajax_model.jpg'>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
+						<h2>How it work?</h2>
+						<ol>
+							<li>An event occurs in a web page (the page is loaded, a button is clicked)</li>
+							<li>An XMLHttpRequest object is created by JavaScript</li>
+							<li>The XMLHttpRequest object sends a request to a web server</li>
+							<li>The server processes the request</li>
+							<li>The server sends a response back to the web page</li>
+							<li>The response is read by JavaScript</li>
+							<li>Proper action (like page update) is performed by JavaScript</li>
+						</ol>						
 					</section>
 				</section>
-
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+					<section>
+					<h2>XMLHttpRequest</h2>
+					<p>A browser built-in object...</p>
+					<p>Syntax for creating an XMLHttpRequest object:</p>
+					<pre><code class="hljs" data-trim contenteditable>
+						const xhttp1 = new XMLHttpRequest();
+						let xhttp2 = new XMLHttpRequest();
+					</code></pre>
+				    </section>
+					<section>
+						<h3>XMLHttpRequest Object Methods</h3>
+						<img src="image/xhmhttpMethods.png" />
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p>
-							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
-							<span style="display: inline-block;" class="fragment fade-up">up, </span>
-							<span style="display: inline-block;" class="fragment fade-down">down, </span>
-							<span style="display: inline-block;" class="fragment fade-left">left</span>
-						</p>
-						<p class="fragment fade-in-then-out">fade-in-then-out</p>
-						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
-						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+							<h3>XMLHttpRequest Object Properties</h3>
+							<img src="image/xmlhttpProperty.png" />
 					</section>
+					<section>
+						<h2>XMLHttpRequest example</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+								function loadDoc() {
+								  var xhttp = new XMLHttpRequest();
+								  xhttp.onreadystatechange = function() {
+									if (this.readyState == 4 && this.status == 200) {
+									  document.getElementById("demo").innerHTML = this.responseText;
+									}
+								  };
+								  xhttp.open("GET", "demo_get.asp", true);
+								  xhttp.send();
+								}
+						</code></pre>
+						<p>You can read more about it <a href="https://www.w3schools.com/js/js_ajax_intro.asp">there</a></p>
+					</section>
+				</section>	
+				<section>
+					<h3>AJAX & PROMISE</h3>
+					<p>So. We already know what is Ajax...</p>
+					<p>How about Promise ?</p>
+				</section>			
+
+				<section>
+					<section>
+						<h2>Promise</h2>
+						<p> It means to tell someone that you will certainly do something</p>
+					</section>
+					<section>
+						<p>But in Javascript Promise is an object...</p>
+						<p>...which tell that it will certainly do something...</p>
+						<p>... and do it</p>
+					</section>
+				
 				</section>
 
 				<section id="transitions">
@@ -227,26 +206,7 @@
 					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
 				</section>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+				
 
 				<section>
 					<h2>Marvelous List</h2>
@@ -395,7 +355,7 @@ Reveal.addEventListener( 'customevent', function() {
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
