@@ -1,0 +1,11 @@
+Hi, there!
+I am very honored to tell you about Ajax and Promises.
+As all of you know that web applications works with
+client-server model.
+Clent send request, server answers.
+In traditional web application model
+server makes page and sends all of its components as one page.
+And we need wait when was loaded.
+AJAX is a developer's dream, because....
+You may read this on slide... Ready?
+Ajax let us send request only on what we want to receive
