@@ -7,20 +7,20 @@
    I am very honored to tell you about Ajax and Promises.
 
 2. 
-   1. As all of you know web applications work with client-server model.
-      + Client sends request, server answers.
+   1.   As all of you know web applications work with client-server model.
+        + Client sends request, server answers.
 
  
-   2. In traditional web application model server makes page and sends all of its components as one thing.
-      And we need wait when it was loaded.
+   2.   In traditional web application model server makes page and sends all of its components as one thing.
+        And we need wait when it was loaded.
 
 3. 
-    1. AJAX is a developer's dream, because...
-     You may read this on slide...
-     + we can read data from a web server - after the page has loaded, 
-     + we can update a web page without reloading the page,
-     + we can send data to a web server - in the background
-    Ready?
+    1.  AJAX is a developer's dream, because...
+        You may read this on slide...
+        + we can read data from a web server - after the page has loaded, 
+        + we can update a web page without reloading the page,
+        + we can send data to a web server - in the background
+        Ready?
 
  
     2.  Ajax is a name of technology. It means asynchronus Javascript and XML. 
@@ -90,5 +90,5 @@
     And Google to the rescue...
 
 9.  And in conclusion i promise if this video will has 10000 views then i will make another one )  
- 
+
 By.
