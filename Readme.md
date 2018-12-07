@@ -2,6 +2,8 @@
 ## Mikhail Zyranau
 ### RSSchool  2018Q3
 
+## Transcript :
+
 1. Hi, there!
    My name is Mikhail.
    I am very honored to tell you about Ajax and Promises.
