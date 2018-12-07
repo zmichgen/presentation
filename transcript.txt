@@ -29,4 +29,4 @@ It gives not empty promises.
 Promise returns its state and result of executor .
 Executor is a function passed to new promise.
 State and result are internal property of object returned promise.
-At the beginning result is undefined, state is pending .
+At the beginning, result is undefined, state is pending .
